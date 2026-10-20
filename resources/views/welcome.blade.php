@@ -210,7 +210,7 @@
 
                 <!-- Main Punchy Title -->
                 <h1 class="instrument-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white leading-[1.08] mb-6">
-                    Apps thatssss <em class="italic text-zinc-300 font-light">feel</em> intuitive.<br>
+                    Apps that <em class="italic text-zinc-300 font-light">feel</em> intuitive.<br>
                     Engineering that <em class="italic animate-gradient-text font-serif">actually</em> delivers.
                 </h1>
 
