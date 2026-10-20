@@ -20,30 +20,19 @@
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
-        <!-- Fallback Tailwind CDN if not built -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                darkMode: 'class',
-                theme: {
-                    extend: {
-                        colors: {
-                            dark: '#070709',
-                            cardDark: '#0e0e12',
-                            accentCyan: '#38bdf8',
-                            accentIndigo: '#6366f1',
-                        },
-                        fontFamily: {
-                            sans: ['Inter', 'sans-serif'],
-                            serif: ['Instrument Serif', 'serif'],
-                            mono: ['JetBrains Mono', 'monospace'],
-                        }
-                    }
-                }
+        <!-- Fallback Tailwind v4 CDN if not built -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style type="text/tailwindcss">
+            @theme {
+                --color-dark: #070709;
+                --color-card-dark: #0e0e12;
+                --color-accent-cyan: #38bdf8;
+                --color-accent-indigo: #6366f1;
+                --font-sans: 'Inter', sans-serif;
+                --font-serif: 'Instrument Serif', serif;
+                --font-mono: 'JetBrains Mono', monospace;
             }
-        </script>
-        <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-        <script src="{{ asset('js/custom.js') }}" defer></script>
+        </style>
     @endif
 
     <style>

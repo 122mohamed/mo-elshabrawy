@@ -4,7 +4,7 @@ nixPkgs = ["php83", "php83Extensions.pdo", "php83Extensions.pdo_sqlite", "php83E
 [phases.build]
 cmds = [
   "composer install --no-dev --optimize-autoloader",
-  "npm ci",
+  "npm install",
   "npm run build",
   "touch database/database.sqlite",
   "php artisan key:generate --force",
