@@ -66,15 +66,18 @@
             Mohamed Elshabrawy
         </a>
         <div class="flex items-center gap-4">
+            <a href="https://play.google.com/store/apps/details?id=com.housemart.house_mart" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-1.5 text-xs mono text-emerald-400 hover:text-emerald-300 transition">
+                <i data-lucide="play" class="w-3 h-3"></i> Google Play
+            </a>
             <a href="#gallery" class="hidden sm:inline-flex items-center gap-1.5 text-xs mono text-amber-400 hover:text-amber-300 transition">
-                <i data-lucide="images" class="w-3 h-3"></i> App Gallery
+                <i data-lucide="images" class="w-3 h-3"></i> Gallery
             </a>
             <a href="#engineering" class="hidden sm:inline-flex items-center gap-1.5 text-xs mono text-zinc-300 hover:text-white transition">
                 <i data-lucide="code-2" class="w-3 h-3"></i> Architecture
             </a>
             <span class="flex items-center gap-1.5 text-xs mono text-amber-400">
                 <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-                Featured Marketplace Case Study
+                Live on Google Play
             </span>
         </div>
     </div>
@@ -100,6 +103,9 @@
     </div>
 
     <div class="ani ani-2 flex flex-wrap justify-center gap-3 mb-10">
+        <a href="https://play.google.com/store/apps/details?id=com.housemart.house_mart" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm shadow-[0_0_24px_rgba(16,185,129,0.35)] transition-all">
+            <i data-lucide="play" class="w-4 h-4"></i> Google Play Store
+        </a>
         <a href="#gallery" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-black font-semibold text-xs sm:text-sm hover:from-amber-400 hover:to-amber-500 transition-all shadow-[0_0_24px_rgba(245,158,11,0.35)]">
             <i data-lucide="images" class="w-4 h-4"></i> Explore Screenshots
         </a>
@@ -108,16 +114,16 @@
         </a>
     </div>
 
-    <!-- Hero Device (Single floating mockup) -->
+    <!-- Hero Device (Single floating mockup with elongated height) -->
     <div class="ani ani-3 relative flex justify-center">
         <div class="absolute inset-0 bg-amber-500/12 blur-3xl rounded-full pointer-events-none"></div>
-        <div class="float phone-frame relative w-52 sm:w-64 border-amber-500/40">
+        <div class="float phone-frame relative w-56 sm:w-64 border-amber-500/40">
             <div class="phone-camera"></div>
-            <img src="{{ asset('images/projects/housemart_1.png') }}" alt="HouseMart Dashboard" class="w-full object-cover object-top" style="aspect-ratio:1620/2880;"/>
+            <img src="{{ asset('images/projects/housemart_1.png') }}" alt="HouseMart Dashboard" class="w-full object-cover object-top" style="aspect-ratio:9/19.5;"/>
         </div>
-        <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-900/90 border border-amber-500/30 backdrop-blur-sm whitespace-nowrap">
+        <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-900/90 border border-amber-500/30 backdrop-blur-sm whitespace-nowrap shadow-lg">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span class="text-[10px] mono text-zinc-300">Marketplace &amp; E-Commerce Engine · 4 Screens Below ↓</span>
+            <span class="text-[10px] mono text-zinc-300">Live on Play Store · 4 Screens Below ↓</span>
         </div>
     </div>
 </section>
@@ -380,11 +386,14 @@ core/
             Explore other featured mobile architectures and case studies built with Clean Architecture, offline-first sync, and bank-grade security.
         </p>
         <div class="flex flex-wrap justify-center gap-4 mb-8">
-            <a href="{{ route('projects.ideal-pos') }}/" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)]">
-                <i data-lucide="layers" class="w-4 h-4"></i> View Ideal POS Case Study
+            <a href="https://play.google.com/store/apps/details?id=com.housemart.house_mart" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm shadow-[0_0_24px_rgba(16,185,129,0.35)] transition-all">
+                <i data-lucide="play" class="w-4 h-4"></i> Download on Google Play
+            </a>
+            <a href="{{ route('projects.ideal-pos') }}/" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-white/15 bg-white/5 text-white hover:bg-white/10 text-xs sm:text-sm transition-all">
+                <i data-lucide="layers" class="w-4 h-4 text-emerald-400"></i> Ideal POS Case Study
             </a>
             <a href="{{ route('projects.dawami-hr') }}/" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-violet-500/30 bg-violet-950/40 text-violet-200 hover:bg-violet-900/50 text-xs sm:text-sm transition-all">
-                <i data-lucide="smartphone" class="w-4 h-4 text-violet-400"></i> View Dawami HR Case Study
+                <i data-lucide="smartphone" class="w-4 h-4 text-violet-400"></i> Dawami HR Case Study
             </a>
         </div>
         <a href="{{ route('home') }}#projects" class="inline-flex items-center gap-2 text-sm mono text-zinc-400 hover:text-white transition group">

@@ -672,12 +672,127 @@
                 </article>
 
 
-                <!-- PROJECT 3: Hospital Mobile App -->
+                <!-- PROJECT 3: HouseMart – Real Estate & Property Marketplace Platform (Live on Play Store) -->
+                <article 
+                    onclick="if(!event.target.closest('a[target=_blank]')) { window.location.href='{{ route('projects.housemart') }}/'; }"
+                    class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-amber-500/20 hover:border-amber-500/40 hover:bg-amber-950/10 overflow-hidden relative group transition-all duration-300 shadow-[0_10px_35px_rgba(0,0,0,0.4)] cursor-pointer" 
+                    data-cursor-view>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-6 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <span class="font-mono text-xs text-amber-400 uppercase tracking-wider font-bold">03</span>
+                                <div class="w-8 h-px bg-amber-500/30"></div>
+                                <span class="font-mono text-xs text-amber-300 uppercase tracking-wider bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-amber-500/30">Live on Google Play Store</span>
+                            </div>
+                            <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-amber-300 transition flex items-center gap-2">
+                                <a href="{{ route('projects.housemart') }}/" class="hover:underline flex items-center gap-2">
+                                    <span>HouseMart</span>
+                                    <i data-lucide="arrow-up-right" class="w-5 h-5 text-amber-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-200"></i>
+                                </a>
+                            </h3>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+                                End-to-end real estate and property marketplace platform for buying, selling, and renting apartments, commercial shops, and full buildings. Integrated with <strong class="text-white">Paymob e-payment</strong> for ad credit packages, <strong class="text-amber-300">Sightengine AI content moderation</strong>, interactive Google Maps GPS, and bank-grade anti-tampering security.
+                            </p>
+
+                            <!-- Feature highlights list -->
+                            <ul class="space-y-2 pt-1">
+                                <li class="flex items-center gap-2.5 text-sm text-zinc-300">
+                                    <span class="w-5 h-5 rounded-full bg-amber-500/15 border border-amber-500/30 flex items-center justify-center flex-shrink-0"><i data-lucide="layout-grid" class="w-3 h-3 text-amber-400"></i></span>
+                                    <span>Multi-category marketplace — Apartments (Buy/Rent), Buildings &amp; Shops</span>
+                                </li>
+                                <li class="flex items-center gap-2.5 text-sm text-zinc-300">
+                                    <span class="w-5 h-5 rounded-full bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center flex-shrink-0"><i data-lucide="map-pin" class="w-3 h-3 text-emerald-400"></i></span>
+                                    <span>Interactive Google Maps &amp; GPS pinning with marker drag-and-drop</span>
+                                </li>
+                                <li class="flex items-center gap-2.5 text-sm text-zinc-300">
+                                    <span class="w-5 h-5 rounded-full bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center flex-shrink-0"><i data-lucide="credit-card" class="w-3 h-3 text-cyan-400"></i></span>
+                                    <span>Paymob Unified Checkout for ad packages with live quota enforcement</span>
+                                </li>
+                                <li class="flex items-center gap-2.5 text-sm text-zinc-300">
+                                    <span class="w-5 h-5 rounded-full bg-rose-500/15 border border-rose-500/30 flex items-center justify-center flex-shrink-0"><i data-lucide="shield-check" class="w-3 h-3 text-rose-400"></i></span>
+                                    <span>AI Computer Vision moderation (Sightengine) scans images prior to upload</span>
+                                </li>
+                                <li class="flex items-center gap-2.5 text-sm text-zinc-300">
+                                    <span class="w-5 h-5 rounded-full bg-purple-500/15 border border-purple-500/30 flex items-center justify-center flex-shrink-0"><i data-lucide="refresh-cw" class="w-3 h-3 text-purple-400"></i></span>
+                                    <span>Silent token refresh on 401 via custom Dio interceptor &amp; Root detection</span>
+                                </li>
+                            </ul>
+
+                            <!-- Tech badges -->
+                            <div class="flex flex-wrap gap-1.5 pt-1">
+                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-amber-300">Flutter</span>
+                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-cyan-300">Clean Arch</span>
+                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-purple-300">BLoC / Cubit</span>
+                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-emerald-300">Paymob</span>
+                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-rose-300">Sightengine AI</span>
+                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-yellow-300">Google Maps</span>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="pt-2 flex flex-wrap items-center gap-3">
+                                <a href="{{ route('projects.housemart') }}/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-black font-semibold text-xs sm:text-sm hover:from-amber-400 hover:to-amber-500 transition-all duration-200 shadow-[0_0_20px_rgba(245,158,11,0.35)] group/btn">
+                                    <span>Explore Full Case Study</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition duration-200"></i>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.housemart.house_mart" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-xs font-mono hover:bg-white/10 hover:text-white transition-all relative z-10">
+                                    <i data-lucide="play" class="w-3.5 h-3.5 text-emerald-400"></i> Google Play
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Single phone mockup with elongated height & rounded corners -->
+                        <div class="lg:col-span-6 flex justify-center">
+                            <div class="relative flex justify-center items-center pb-6 group/phone">
+                                <!-- Ambient glow layers -->
+                                <div class="absolute inset-0 bg-amber-500/15 blur-3xl rounded-full pointer-events-none"></div>
+                                <div class="absolute inset-0 bg-orange-600/8 blur-2xl rounded-full pointer-events-none"></div>
+
+                                <!-- Phone frame with rounded bezel and increased height -->
+                                <div class="relative w-56 sm:w-64 p-2.5 rounded-[3rem] bg-gradient-to-b from-zinc-800 via-zinc-900 to-zinc-950 border-[3px] border-amber-500/40 group-hover/phone:border-amber-400/80 shadow-[0_30px_80px_rgba(245,158,11,0.3),0_0_0_1px_rgba(255,255,255,0.06)] transition-all duration-500 group-hover/phone:shadow-[0_40px_100px_rgba(245,158,11,0.45)] group-hover/phone:scale-[1.03]">
+                                    
+                                    <!-- Screen container with explicit rounded corners & clipping -->
+                                    <div class="relative rounded-[2.3rem] overflow-hidden bg-black shadow-inner" style="transform: translateZ(0);">
+                                        
+                                        <!-- Camera punch hole (Samsung S21 Ultra) -->
+                                        <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-black border border-white/20 z-20 pointer-events-none"></div>
+
+                                        <!-- The hero screenshot with elongated aspect ratio -->
+                                        <img
+                                            src="{{ asset('images/projects/housemart_1.png') }}"
+                                            alt="HouseMart App – Properties Screen"
+                                            class="w-full object-cover object-top rounded-[2.3rem] block"
+                                            style="aspect-ratio:9/19.5;"
+                                            loading="lazy"
+                                        />
+
+                                        <!-- Hover overlay: "View All Screenshots" -->
+                                        <div class="absolute inset-0 bg-amber-950/80 backdrop-blur-[2px] opacity-0 group-hover/phone:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 rounded-[2.3rem]">
+                                            <div class="w-11 h-11 rounded-full bg-amber-500/30 border border-amber-400/60 flex items-center justify-center shadow-lg">
+                                                <i data-lucide="images" class="w-5 h-5 text-amber-200"></i>
+                                            </div>
+                                            <span class="text-xs font-mono text-amber-200 font-semibold tracking-wide">View All Screenshots</span>
+                                            <span class="text-[10px] font-mono text-amber-300 bg-amber-900/60 px-2 py-0.5 rounded-full border border-amber-500/30">4 screens inside →</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Floating Live pill -->
+                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-900/90 border border-amber-500/30 backdrop-blur-sm whitespace-nowrap shadow-lg">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                    <span class="text-[10px] font-mono text-zinc-300">Live on Play Store · Paymob</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- PROJECT 4: Hospital Mobile App -->
                 <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-white/10 overflow-hidden relative group" data-cursor-view>
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         <div class="lg:col-span-6 space-y-4">
                             <div class="flex items-center gap-3">
-                                <span class="font-mono text-xs text-cyan-400 uppercase tracking-wider font-bold">03</span>
+                                <span class="font-mono text-xs text-cyan-400 uppercase tracking-wider font-bold">04</span>
                                 <div class="w-8 h-px bg-white/20"></div>
                                 <span class="font-mono text-xs text-zinc-400 uppercase tracking-wider">Mobile Healthcare</span>
                             </div>
@@ -754,12 +869,12 @@
                 </article>
 
 
-                <!-- PROJECT 4: Online Banking Mobile App -->
+                <!-- PROJECT 5: Online Banking Mobile App -->
                 <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-white/10 overflow-hidden relative group" data-cursor-view>
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         <div class="lg:col-span-6 space-y-4">
                             <div class="flex items-center gap-3">
-                                <span class="font-mono text-xs text-purple-400 uppercase tracking-wider font-bold">04</span>
+                                <span class="font-mono text-xs text-purple-400 uppercase tracking-wider font-bold">05</span>
                                 <div class="w-8 h-px bg-white/20"></div>
                                 <span class="font-mono text-xs text-zinc-400 uppercase tracking-wider">Fintech & AI</span>
                             </div>
@@ -805,122 +920,6 @@
                                 <div class="flex items-center justify-between text-[10px] font-mono text-zinc-500">
                                     <span>Dialogflow AI Bot Active</span>
                                     <span>Clean Cubit State</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-
-                <!-- PROJECT 5: HouseMart – Real Estate & Property Marketplace Platform -->
-                <article 
-                    onclick="if(!event.target.closest('a[target=_blank]')) { window.location.href='{{ route('projects.housemart') }}/'; }"
-                    class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-amber-500/20 hover:border-amber-500/40 hover:bg-amber-950/10 overflow-hidden relative group transition-all duration-300 shadow-[0_10px_35px_rgba(0,0,0,0.4)] cursor-pointer" 
-                    data-cursor-view>
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                        <div class="lg:col-span-6 space-y-4">
-                            <div class="flex items-center gap-3">
-                                <span class="font-mono text-xs text-amber-400 uppercase tracking-wider font-bold">05</span>
-                                <div class="w-8 h-px bg-amber-500/30"></div>
-                                <span class="font-mono text-xs text-amber-300 uppercase tracking-wider bg-amber-950/60 px-2.5 py-0.5 rounded-full border border-amber-500/30">Paymob &amp; AI Image Moderation</span>
-                            </div>
-                            <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-amber-300 transition flex items-center gap-2">
-                                <a href="{{ route('projects.housemart') }}/" class="hover:underline flex items-center gap-2">
-                                    <span>HouseMart</span>
-                                    <i data-lucide="arrow-up-right" class="w-5 h-5 text-amber-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-200"></i>
-                                </a>
-                            </h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
-                                End-to-end real estate and property marketplace platform for buying, selling, and renting apartments, commercial shops, and full buildings. Integrated with <strong class="text-white">Paymob e-payment</strong> for ad credit packages, <strong class="text-amber-300">Sightengine AI content moderation</strong>, interactive Google Maps GPS, and bank-grade anti-tampering security.
-                            </p>
-
-                            <!-- Feature highlights list -->
-                            <ul class="space-y-2 pt-1">
-                                <li class="flex items-center gap-2.5 text-sm text-zinc-300">
-                                    <span class="w-5 h-5 rounded-full bg-amber-500/15 border border-amber-500/30 flex items-center justify-center flex-shrink-0"><i data-lucide="layout-grid" class="w-3 h-3 text-amber-400"></i></span>
-                                    <span>Multi-category marketplace — Apartments (Buy/Rent), Buildings &amp; Shops</span>
-                                </li>
-                                <li class="flex items-center gap-2.5 text-sm text-zinc-300">
-                                    <span class="w-5 h-5 rounded-full bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center flex-shrink-0"><i data-lucide="map-pin" class="w-3 h-3 text-emerald-400"></i></span>
-                                    <span>Interactive Google Maps &amp; GPS pinning with marker drag-and-drop</span>
-                                </li>
-                                <li class="flex items-center gap-2.5 text-sm text-zinc-300">
-                                    <span class="w-5 h-5 rounded-full bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center flex-shrink-0"><i data-lucide="credit-card" class="w-3 h-3 text-cyan-400"></i></span>
-                                    <span>Paymob Unified Checkout for ad packages with live quota enforcement</span>
-                                </li>
-                                <li class="flex items-center gap-2.5 text-sm text-zinc-300">
-                                    <span class="w-5 h-5 rounded-full bg-rose-500/15 border border-rose-500/30 flex items-center justify-center flex-shrink-0"><i data-lucide="shield-check" class="w-3 h-3 text-rose-400"></i></span>
-                                    <span>AI Computer Vision moderation (Sightengine) scans images prior to upload</span>
-                                </li>
-                                <li class="flex items-center gap-2.5 text-sm text-zinc-300">
-                                    <span class="w-5 h-5 rounded-full bg-purple-500/15 border border-purple-500/30 flex items-center justify-center flex-shrink-0"><i data-lucide="refresh-cw" class="w-3 h-3 text-purple-400"></i></span>
-                                    <span>Silent token refresh on 401 via custom Dio interceptor &amp; Root detection</span>
-                                </li>
-                            </ul>
-
-                            <!-- Tech badges -->
-                            <div class="flex flex-wrap gap-1.5 pt-1">
-                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-amber-300">Flutter</span>
-                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-cyan-300">Clean Arch</span>
-                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-purple-300">BLoC / Cubit</span>
-                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-emerald-300">Paymob</span>
-                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-rose-300">Sightengine AI</span>
-                                <span class="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[11px] font-mono text-yellow-300">Google Maps</span>
-                            </div>
-
-                            <!-- Actions -->
-                            <div class="pt-2 flex flex-wrap items-center gap-3">
-                                <a href="{{ route('projects.housemart') }}/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-black font-semibold text-xs sm:text-sm hover:from-amber-400 hover:to-amber-500 transition-all duration-200 shadow-[0_0_20px_rgba(245,158,11,0.35)] group/btn">
-                                    <span>Explore Full Case Study</span>
-                                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition duration-200"></i>
-                                </a>
-                                <span class="text-xs font-mono text-zinc-400 flex items-center gap-1.5">
-                                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-                                    <span>E-Commerce &amp; Monetization Case Study</span>
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Single phone mockup with rounded corners & bezel -->
-                        <div class="lg:col-span-6 flex justify-center">
-                            <div class="relative flex justify-center items-center pb-6 group/phone">
-                                <!-- Ambient glow layers -->
-                                <div class="absolute inset-0 bg-amber-500/15 blur-3xl rounded-full pointer-events-none"></div>
-                                <div class="absolute inset-0 bg-orange-600/8 blur-2xl rounded-full pointer-events-none"></div>
-
-                                <!-- Phone frame with rounded bezel -->
-                                <div class="relative w-52 sm:w-60 p-2.5 rounded-[3rem] bg-gradient-to-b from-zinc-800 via-zinc-900 to-zinc-950 border-[3px] border-amber-500/40 group-hover/phone:border-amber-400/80 shadow-[0_30px_80px_rgba(245,158,11,0.3),0_0_0_1px_rgba(255,255,255,0.06)] transition-all duration-500 group-hover/phone:shadow-[0_40px_100px_rgba(245,158,11,0.45)] group-hover/phone:scale-[1.03]">
-                                    
-                                    <!-- Screen container with explicit rounded corners & clipping -->
-                                    <div class="relative rounded-[2.3rem] overflow-hidden bg-black shadow-inner" style="transform: translateZ(0);">
-                                        
-                                        <!-- Camera punch hole (Samsung S21 Ultra) -->
-                                        <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-black border border-white/20 z-20 pointer-events-none"></div>
-
-                                        <!-- The hero screenshot with rounded corners -->
-                                        <img
-                                            src="{{ asset('images/projects/housemart_1.png') }}"
-                                            alt="HouseMart App – Properties Screen"
-                                            class="w-full object-cover object-top rounded-[2.3rem] block"
-                                            style="aspect-ratio:1620/2880;"
-                                            loading="lazy"
-                                        />
-
-                                        <!-- Hover overlay: "View All Screenshots" -->
-                                        <div class="absolute inset-0 bg-amber-950/80 backdrop-blur-[2px] opacity-0 group-hover/phone:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 rounded-[2.3rem]">
-                                            <div class="w-11 h-11 rounded-full bg-amber-500/30 border border-amber-400/60 flex items-center justify-center shadow-lg">
-                                                <i data-lucide="images" class="w-5 h-5 text-amber-200"></i>
-                                            </div>
-                                            <span class="text-xs font-mono text-amber-200 font-semibold tracking-wide">View All Screenshots</span>
-                                            <span class="text-[10px] font-mono text-amber-300 bg-amber-900/60 px-2 py-0.5 rounded-full border border-amber-500/30">4 screens inside →</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Floating Live pill -->
-                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-900/90 border border-amber-500/30 backdrop-blur-sm whitespace-nowrap shadow-lg">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                                    <span class="text-[10px] font-mono text-zinc-300">Clean Architecture · Paymob</span>
                                 </div>
                             </div>
                         </div>
