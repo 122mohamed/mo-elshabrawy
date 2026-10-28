@@ -103,7 +103,7 @@
     <!-- Floating Top Navigation -->
     <header class="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-5xl">
         <nav class="flex items-center justify-between p-2 rounded-full glass-pill border border-white/10 shadow-[0_12px_35px_rgba(0,0,0,0.6)]">
-            <a href="{{ route('home') }}#projects" class="flex items-center gap-2 pl-3 pr-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/10 transition group">
+            <a href="{{ route('home') }}/#projects" class="flex items-center gap-2 pl-3 pr-4 py-1.5 rounded-full text-xs sm:text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/10 transition group">
                 <i data-lucide="arrow-left" class="w-4 h-4 text-emerald-400 group-hover:-translate-x-1 transition duration-200"></i>
                 <span>Portfolio</span>
             </a>
@@ -123,7 +123,7 @@
                     <i data-lucide="download" class="w-3.5 h-3.5"></i>
                     <span>CV</span>
                 </a>
-                <a href="{{ route('home') }}#contact" class="flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-400 text-black hover:bg-emerald-300 transition shadow-sm">
+                <a href="{{ route('home') }}/#contact" class="flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-400 text-black hover:bg-emerald-300 transition shadow-sm">
                     <span>Contact</span>
                     <i data-lucide="mail" class="w-3.5 h-3.5"></i>
                 </a>
@@ -1229,7 +1229,7 @@
 
         <!-- 10. BOTTOM NAVIGATION & CALL TO ACTION -->
         <section class="w-full max-w-5xl pt-16 flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-white/10">
-            <a href="{{ route('home') }}#projects" class="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition group">
+            <a href="{{ route('home') }}/#projects" class="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition group">
                 <i data-lucide="arrow-left" class="w-4 h-4 text-emerald-400 group-hover:-translate-x-1 transition duration-200"></i>
                 <span>Back to Selected Projects</span>
             </a>
@@ -1240,7 +1240,7 @@
                     <span>Download CV</span>
                 </a>
 
-                <a href="{{ route('home') }}#contact" class="px-6 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-black font-semibold text-xs sm:text-sm hover:from-emerald-400 hover:to-teal-400 transition shadow-[0_0_25px_rgba(16,185,129,0.4)] flex items-center gap-2">
+                <a href="{{ route('home') }}/#contact" class="px-6 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-black font-semibold text-xs sm:text-sm hover:from-emerald-400 hover:to-teal-400 transition shadow-[0_0_25px_rgba(16,185,129,0.4)] flex items-center gap-2">
                     <span>Contact Mohamed</span>
                     <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                 </a>

@@ -462,7 +462,7 @@
                                 <span class="font-mono text-xs text-emerald-300 uppercase tracking-wider bg-emerald-950/60 px-2.5 py-0.5 rounded-full border border-emerald-500/30">Featured Enterprise Case Study</span>
                             </div>
                             <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-emerald-300 transition flex items-center gap-2">
-                                <a href="{{ route('projects.ideal-pos') }}" class="hover:underline flex items-center gap-2">
+                                <a href="{{ route('projects.ideal-pos') }}/" class="hover:underline flex items-center gap-2">
                                     <span>Ideal POS & ERP Solution</span>
                                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-emerald-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-200"></i>
                                 </a>
@@ -495,7 +495,7 @@
 
                             <!-- Actions -->
                             <div class="pt-3 flex flex-wrap items-center gap-4">
-                                <a href="{{ route('projects.ideal-pos') }}" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-black font-semibold text-xs sm:text-sm hover:from-emerald-400 hover:to-teal-400 transition-all duration-200 shadow-[0_0_20px_rgba(16,185,129,0.35)] group/btn">
+                                <a href="{{ route('projects.ideal-pos') }}/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-black font-semibold text-xs sm:text-sm hover:from-emerald-400 hover:to-teal-400 transition-all duration-200 shadow-[0_0_20px_rgba(16,185,129,0.35)] group/btn">
                                     <span>Explore Full Case Study & Specs</span>
                                     <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition duration-200"></i>
                                 </a>
@@ -508,7 +508,7 @@
 
                         <!-- Project visual display (Mockup container with real image) -->
                         <div class="lg:col-span-6 flex justify-center">
-                            <a href="{{ route('projects.ideal-pos') }}" class="relative w-full max-w-lg aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-950/60 via-teal-950/40 to-zinc-950 p-2 border border-emerald-500/30 group-hover:border-emerald-400/60 transition-all duration-300 shadow-2xl block group/img">
+                            <a href="{{ route('projects.ideal-pos') }}/" class="relative w-full max-w-lg aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-950/60 via-teal-950/40 to-zinc-950 p-2 border border-emerald-500/30 group-hover:border-emerald-400/60 transition-all duration-300 shadow-2xl block group/img">
                                 <div class="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none"></div>
                                 
                                 <!-- Top status bar -->

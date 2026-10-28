@@ -57,9 +57,12 @@ jobs:
       - name: Start Laravel server & generate static HTML
         run: |
           php artisan serve --port=8000 &
-          sleep 4
-          mkdir -p dist
+          sleep 5
+          mkdir -p dist/projects/ideal-pos
           curl -s http://127.0.0.1:8000 -o dist/index.html
+          curl -s http://127.0.0.1:8000/projects/ideal-pos -o dist/projects/ideal-pos/index.html
+          cp dist/projects/ideal-pos/index.html dist/projects/ideal-pos.html
+          touch dist/.nojekyll
 
       - name: Copy public assets
         run: |
@@ -72,12 +75,41 @@ jobs:
         run: |
           REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
           BASE="/${REPO_NAME}"
-          sed -i "s|http://127.0.0.1:8000/|${BASE}/|g" dist/index.html
-          sed -i "s|\"/build/|\"${BASE}/build/|g" dist/index.html
-          sed -i "s|href=\"/build/|href=\"${BASE}/build/|g" dist/index.html
-          sed -i "s|\"/cv/|\"${BASE}/cv/|g" dist/index.html
-          sed -i "s|\"/images/|\"${BASE}/images/|g" dist/index.html
-          sed -i "s|src=\"/images/|src=\"${BASE}/images/|g" dist/index.html
+          find dist -type f -name "*.html" -exec sed -i "s|http://127.0.0.1:8000/|${BASE}/|g" {} +
+          find dist -type f -name "*.html" -exec sed -i "s|http://127.0.0.1:8000#|${BASE}/#|g" {} +
+          find dist -type f -name "*.html" -exec sed -i "s|http://127.0.0.1:8000\"|${BASE}/\"|g" {} +
+          find dist -type f -name "*.html" -exec sed -i "s|\"/build/|\"${BASE}/build/|g" {} +
+          find dist -type f -name "*.html" -exec sed -i "s|href=\"/build/|href=\"${BASE}/build/|g" {} +
+          find dist -type f -name "*.html" -exec sed -i "s|\"/cv/|\"${BASE}/cv/|g" {} +
+          find dist -type f -name "*.html" -exec sed -i "s|\"/images/|\"${BASE}/images/|g" {} +
+          find dist -type f -name "*.html" -exec sed -i "s|src=\"/images/|src=\"${BASE}/images/|g" {} +
+
+      - name: Create fallback 404 handler for SPA routing
+        run: |
+          REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+          cat << 'EOF' > dist/404.html
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <meta charset="utf-8">
+              <title>Redirecting...</title>
+              <script>
+                  (function() {
+                      var path = window.location.pathname;
+                      var repo = '/' + window.location.pathname.split('/')[1];
+                      if (path.indexOf('ideal-pos') !== -1) {
+                          window.location.replace(repo + '/projects/ideal-pos/');
+                          return;
+                      }
+                      window.location.replace(repo + '/');
+                  })();
+              </script>
+          </head>
+          <body>
+              <p>Redirecting...</p>
+          </body>
+          </html>
+          EOF
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
