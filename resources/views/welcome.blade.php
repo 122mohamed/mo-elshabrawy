@@ -650,60 +650,98 @@
                 </article>
 
 
-                <!-- PROJECT 4: ERP & Cashier Suite (Odoo & POS) -->
-                <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-white/10 overflow-hidden relative group" data-cursor-view>
+                <!-- PROJECT 4: Ideal POS & ERP Solution (Odoo, SoftPOS & HR) -->
+                <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-emerald-500/20 hover:border-emerald-500/40 overflow-hidden relative group transition-all duration-300 shadow-[0_10px_35px_rgba(0,0,0,0.4)]" data-cursor-view>
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         <div class="lg:col-span-6 space-y-4">
                             <div class="flex items-center gap-3">
-                                <span class="font-mono text-xs text-emerald-400 uppercase tracking-wider">04</span>
-                                <div class="w-8 h-px bg-white/20"></div>
-                                <span class="font-mono text-xs text-zinc-400 uppercase tracking-wider">Enterprise & POS</span>
+                                <span class="font-mono text-xs text-emerald-400 uppercase tracking-wider font-bold">04</span>
+                                <div class="w-8 h-px bg-emerald-500/30"></div>
+                                <span class="font-mono text-xs text-emerald-300 uppercase tracking-wider bg-emerald-950/60 px-2.5 py-0.5 rounded-full border border-emerald-500/30">Enterprise Case Study</span>
                             </div>
-                            <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-emerald-300 transition">Odoo HR & POS Cashier System</h3>
+                            <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-emerald-300 transition flex items-center gap-2">
+                                <a href="{{ route('projects.ideal-pos') }}" class="hover:underline flex items-center gap-2">
+                                    <span>Ideal POS & ERP Solution</span>
+                                    <i data-lucide="arrow-up-right" class="w-5 h-5 text-emerald-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-200"></i>
+                                </a>
+                            </h3>
                             <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
-                                Complete point-of-sale and human resources ecosystem. Includes Mada payment gateway integration, offline-capable inventory and sales with Hive database, and direct API bridge with Odoo ERP.
+                                Enterprise-grade, offline-first POS & ERP cashier platform for retail and hospitality. Integrates directly with <strong class="text-white">Odoo ERP</strong>, features bank-certified <strong class="text-emerald-300">SoftPOS (NFC Tap-to-Pay)</strong>, <strong class="text-white">SQLCipher AES-256</strong> on-device encryption, <strong class="text-white">ZATCA e-invoicing</strong>, smart POS thermal printing, and an intelligent <strong class="text-cyan-300">AI HR Assistant</strong>.
                             </p>
                             
-                            <div class="flex flex-wrap gap-2 pt-2">
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-cyan-300">Flutter & Dart</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-emerald-400">Odoo ERP</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-purple-400">Hive DB</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-blue-400">Mada Gateway</span>
+                            <!-- Key Technical Badges -->
+                            <div class="flex flex-wrap gap-2 pt-1">
+                                <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-cyan-300 flex items-center gap-1">
+                                    <i data-lucide="layers" class="w-3 h-3 text-cyan-400"></i> Clean Arch & DDD
+                                </span>
+                                <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-emerald-400 flex items-center gap-1">
+                                    <i data-lucide="server" class="w-3 h-3 text-emerald-400"></i> Odoo RPC Engine
+                                </span>
+                                <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-amber-300 flex items-center gap-1">
+                                    <i data-lucide="contactless" class="w-3 h-3 text-amber-400"></i> SoftPOS (NFC)
+                                </span>
+                                <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-purple-300 flex items-center gap-1">
+                                    <i data-lucide="database" class="w-3 h-3 text-purple-400"></i> Drift & SQLCipher
+                                </span>
+                                <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-blue-300 flex items-center gap-1">
+                                    <i data-lucide="bot" class="w-3 h-3 text-blue-400"></i> AI HR Assistant
+                                </span>
+                                <span class="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-emerald-400 flex items-center gap-1">
+                                    <i data-lucide="qr-code" class="w-3 h-3 text-emerald-400"></i> ZATCA QR
+                                </span>
                             </div>
 
-                            <div class="pt-4 flex items-center gap-4">
-                                <span class="text-xs font-mono text-zinc-500">Ready for image upload: <code class="text-zinc-300">/public/images/projects/pos.png</code></span>
+                            <!-- Actions -->
+                            <div class="pt-3 flex flex-wrap items-center gap-4">
+                                <a href="{{ route('projects.ideal-pos') }}" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-black font-semibold text-xs sm:text-sm hover:from-emerald-400 hover:to-teal-400 transition-all duration-200 shadow-[0_0_20px_rgba(16,185,129,0.35)] group/btn">
+                                    <span>Explore Full Case Study & Specs</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition duration-200"></i>
+                                </a>
+                                <span class="text-xs font-mono text-zinc-400 flex items-center gap-1.5">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                                    <span>Full Architecture & Features Documented</span>
+                                </span>
                             </div>
                         </div>
 
-                        <!-- Project visual display -->
+                        <!-- Project visual display (Mockup container with real image) -->
                         <div class="lg:col-span-6 flex justify-center">
-                            <div class="relative w-full max-w-md aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-950/40 via-teal-950/30 to-zinc-950 p-6 border border-white/10 flex flex-col justify-between shadow-2xl">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs font-mono text-emerald-400 font-bold">POS Terminal Online</span>
-                                    <span class="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[9px] font-mono">Mada Verified</span>
+                            <a href="{{ route('projects.ideal-pos') }}" class="relative w-full max-w-lg aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-950/60 via-teal-950/40 to-zinc-950 p-2 border border-emerald-500/30 group-hover:border-emerald-400/60 transition-all duration-300 shadow-2xl block group/img">
+                                <div class="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none"></div>
+                                
+                                <!-- Top status bar -->
+                                <div class="relative z-20 flex items-center justify-between px-3 pt-2 pb-1">
+                                    <div class="flex items-center gap-1.5">
+                                        <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></div>
+                                        <span class="text-[10px] font-mono text-emerald-300 font-bold tracking-wider">OFFLINE-FIRST ENGINE</span>
+                                    </div>
+                                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[9px] font-mono border border-emerald-500/30">Odoo RPC Active</span>
                                 </div>
 
-                                <div class="my-auto grid grid-cols-2 gap-3">
-                                    <div class="p-3 rounded-lg bg-zinc-900/90 border border-white/5 text-left">
-                                        <div class="text-[10px] font-mono text-zinc-400">Today's Sales</div>
-                                        <div class="text-lg font-bold text-white mt-1">42,850 EGP</div>
-                                        <div class="text-[9px] text-emerald-400 font-mono">+18% vs yesterday</div>
-                                    </div>
-                                    <div class="p-3 rounded-lg bg-zinc-900/90 border border-white/5 text-left">
-                                        <div class="text-[10px] font-mono text-zinc-400">Odoo Sync Status</div>
-                                        <div class="text-sm font-semibold text-emerald-400 mt-1 flex items-center gap-1.5">
-                                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Synced
+                                <!-- Actual Image Preview -->
+                                <div class="relative w-full h-[calc(100%-2rem)] rounded-xl overflow-hidden mt-1 bg-zinc-950">
+                                    <img 
+                                        src="{{ asset('images/ideal_pos.png') }}" 
+                                        alt="Ideal POS & ERP Solution" 
+                                        class="w-full h-full object-cover object-center group-hover/img:scale-105 transition-transform duration-700 ease-out"
+                                        loading="lazy"
+                                    />
+                                    
+                                    <!-- Hover overlay cue -->
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                        <div class="px-4 py-2 rounded-full glass-pill border border-emerald-400/40 text-emerald-300 text-xs font-mono font-semibold flex items-center gap-2 shadow-2xl backdrop-blur-md">
+                                            <i data-lucide="eye" class="w-4 h-4 text-emerald-400"></i>
+                                            <span>Open Case Study</span>
                                         </div>
-                                        <div class="text-[9px] text-zinc-400 font-mono">0 pending orders</div>
                                     </div>
                                 </div>
 
-                                <div class="flex items-center justify-between text-[10px] font-mono text-zinc-500">
-                                    <span>High-throughput Transaction Bus</span>
-                                    <span>Fast Thermal Printing</span>
+                                <!-- Bottom subtle bar -->
+                                <div class="relative z-20 flex items-center justify-between px-3 py-1.5 text-[10px] font-mono text-zinc-400">
+                                    <span>SQLCipher AES-256</span>
+                                    <span class="text-emerald-400">NearPay SoftPOS • ZATCA QR</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </article>
