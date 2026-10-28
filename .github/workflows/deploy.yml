@@ -59,9 +59,15 @@ jobs:
           php artisan serve --port=8000 &
           sleep 5
           mkdir -p dist/projects/ideal-pos
+          mkdir -p dist/projects/dawami-hr
+          mkdir -p dist/projects/housemart
           curl -s http://127.0.0.1:8000 -o dist/index.html
           curl -s http://127.0.0.1:8000/projects/ideal-pos -o dist/projects/ideal-pos/index.html
           cp dist/projects/ideal-pos/index.html dist/projects/ideal-pos.html
+          curl -s http://127.0.0.1:8000/projects/dawami-hr -o dist/projects/dawami-hr/index.html
+          cp dist/projects/dawami-hr/index.html dist/projects/dawami-hr.html
+          curl -s http://127.0.0.1:8000/projects/housemart -o dist/projects/housemart/index.html
+          cp dist/projects/housemart/index.html dist/projects/housemart.html
           touch dist/.nojekyll
 
       - name: Copy public assets
@@ -99,6 +105,14 @@ jobs:
                       var repo = '/' + window.location.pathname.split('/')[1];
                       if (path.indexOf('ideal-pos') !== -1) {
                           window.location.replace(repo + '/projects/ideal-pos/');
+                          return;
+                      }
+                      if (path.indexOf('dawami-hr') !== -1) {
+                          window.location.replace(repo + '/projects/dawami-hr/');
+                          return;
+                      }
+                      if (path.indexOf('housemart') !== -1) {
+                          window.location.replace(repo + '/projects/housemart/');
                           return;
                       }
                       window.location.replace(repo + '/');
