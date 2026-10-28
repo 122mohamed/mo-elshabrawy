@@ -452,212 +452,14 @@
 
             <div class="space-y-16">
 
-                <!-- PROJECT 1: Hospital Mobile App -->
-                <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-white/10 overflow-hidden relative group" data-cursor-view>
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                        <div class="lg:col-span-6 space-y-4">
-                            <div class="flex items-center gap-3">
-                                <span class="font-mono text-xs text-cyan-400 uppercase tracking-wider">01</span>
-                                <div class="w-8 h-px bg-white/20"></div>
-                                <span class="font-mono text-xs text-zinc-400 uppercase tracking-wider">Mobile Healthcare</span>
-                            </div>
-                            <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-cyan-300 transition">Hospital Mobile App</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
-                                A comprehensive healthcare mobile platform featuring patient profile management, live doctor appointment scheduling, prescription tracking, and instant real-time push notifications via Firebase Cloud Messaging.
-                            </p>
-                            
-                            <!-- Tags -->
-                            <div class="flex flex-wrap gap-2 pt-2">
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-cyan-300">Flutter</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-zinc-300">Dart</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-amber-400">Firebase Firestore</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-blue-400">FCM Push</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-purple-400">BLoC</span>
-                            </div>
-
-                            <div class="pt-4 flex items-center gap-4">
-                                <span class="text-xs font-mono text-zinc-500">Ready for image upload: <code class="text-zinc-300">/public/images/projects/hospital.png</code></span>
-                            </div>
-                        </div>
-
-                        <!-- Project visual display (Mockup container) -->
-                        <div class="lg:col-span-6 flex justify-center">
-                            <div class="relative w-full max-w-md aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-cyan-900/40 via-blue-900/30 to-zinc-950 p-6 border border-white/10 flex flex-col justify-between shadow-2xl">
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-2">
-                                        <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
-                                        <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                                        <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
-                                    </div>
-                                    <span class="text-[11px] font-mono text-cyan-400/80">HealthTech v2.4</span>
-                                </div>
-
-                                <!-- UI Mockup Preview -->
-                                <div class="flex items-center justify-center gap-4 py-4">
-                                    <!-- Phone Screen 1 -->
-                                    <div class="w-32 h-48 rounded-xl bg-zinc-900/90 border border-cyan-500/30 p-2.5 flex flex-col justify-between shadow-lg transform -rotate-3 hover:rotate-0 transition duration-300">
-                                        <div class="w-full flex items-center justify-between text-[8px] font-mono text-cyan-300">
-                                            <span>9:41</span>
-                                            <i data-lucide="wifi" class="w-2.5 h-2.5"></i>
-                                        </div>
-                                        <div class="space-y-1.5 my-auto text-left">
-                                            <div class="w-16 h-2 rounded bg-cyan-400/50"></div>
-                                            <div class="w-20 h-1.5 rounded bg-zinc-700"></div>
-                                            <div class="p-1 rounded bg-cyan-950/80 border border-cyan-500/30 text-[7px] text-cyan-200">
-                                                Dr. Sarah (Cardio)
-                                            </div>
-                                        </div>
-                                        <div class="w-full h-4 rounded bg-cyan-500 text-[8px] text-black font-bold flex items-center justify-center">Book Now</div>
-                                    </div>
-
-                                    <!-- Phone Screen 2 -->
-                                    <div class="w-32 h-48 rounded-xl bg-zinc-900/90 border border-blue-500/30 p-2.5 flex flex-col justify-between shadow-lg transform rotate-3 hover:rotate-0 transition duration-300">
-                                        <div class="w-full flex items-center justify-between text-[8px] font-mono text-blue-300">
-                                            <span>Upcoming</span>
-                                            <i data-lucide="bell" class="w-2.5 h-2.5"></i>
-                                        </div>
-                                        <div class="space-y-1 my-auto text-left">
-                                            <div class="text-[8px] text-zinc-300 font-semibold">Appointment #409</div>
-                                            <div class="w-24 h-1 rounded bg-zinc-700"></div>
-                                            <div class="p-1 rounded bg-blue-950/80 border border-blue-500/30 text-[7px] text-blue-200">
-                                                Confirmed · 11:30 AM
-                                            </div>
-                                        </div>
-                                        <div class="w-full h-4 rounded bg-zinc-800 text-[8px] text-zinc-300 flex items-center justify-center">View QR</div>
-                                    </div>
-                                </div>
-
-                                <div class="text-right text-[10px] font-mono text-zinc-500">Live Architecture · Real-time Sync</div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-
-                <!-- PROJECT 2: Online Banking Mobile App -->
-                <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-white/10 overflow-hidden relative group" data-cursor-view>
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                        <div class="lg:col-span-6 space-y-4">
-                            <div class="flex items-center gap-3">
-                                <span class="font-mono text-xs text-purple-400 uppercase tracking-wider">02</span>
-                                <div class="w-8 h-px bg-white/20"></div>
-                                <span class="font-mono text-xs text-zinc-400 uppercase tracking-wider">Fintech & AI</span>
-                            </div>
-                            <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-purple-300 transition">Online Banking App</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
-                                High-security banking application built with Flutter & Firebase. Integrated with an intelligent Dialogflow AI chatbot for instant customer support, transaction history, cards control, and biometric authentication.
-                            </p>
-                            
-                            <div class="flex flex-wrap gap-2 pt-2">
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-cyan-300">Flutter</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-purple-400">Dialogflow AI</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-amber-400">Firebase Auth</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-emerald-400">Biometrics</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-zinc-300">Cubit</span>
-                            </div>
-
-                            <div class="pt-4 flex items-center gap-4">
-                                <span class="text-xs font-mono text-zinc-500">Ready for image upload: <code class="text-zinc-300">/public/images/projects/banking.png</code></span>
-                            </div>
-                        </div>
-
-                        <!-- Project visual display -->
-                        <div class="lg:col-span-6 flex justify-center">
-                            <div class="relative w-full max-w-md aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-purple-950/40 via-indigo-950/30 to-zinc-950 p-6 border border-white/10 flex flex-col justify-between shadow-2xl">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs font-mono text-purple-400 font-bold">Secure Banking</span>
-                                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[9px] font-mono">Encrypted</span>
-                                </div>
-
-                                <!-- Banking card visual -->
-                                <div class="my-auto mx-auto w-64 h-36 rounded-xl bg-gradient-to-r from-violet-600 via-indigo-600 to-purple-800 p-4 text-white flex flex-col justify-between shadow-2xl border border-white/20 transform group-hover:scale-105 transition duration-300">
-                                    <div class="flex items-center justify-between">
-                                        <span class="text-xs font-mono tracking-widest uppercase">MOHAMED ELSHABRAWY</span>
-                                        <i data-lucide="credit-card" class="w-4 h-4"></i>
-                                    </div>
-                                    <div class="font-mono text-sm tracking-wider">•••• •••• •••• 4289</div>
-                                    <div class="flex items-center justify-between text-[10px] font-mono text-white/80">
-                                        <span>EXP 08/29</span>
-                                        <span class="font-bold text-xs">VISA</span>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center justify-between text-[10px] font-mono text-zinc-500">
-                                    <span>Dialogflow AI Bot Active</span>
-                                    <span>Clean Cubit State</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-
-                <!-- PROJECT 3: Real Estate Mobile App -->
-                <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-white/10 overflow-hidden relative group" data-cursor-view>
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                        <div class="lg:col-span-6 space-y-4">
-                            <div class="flex items-center gap-3">
-                                <span class="font-mono text-xs text-amber-400 uppercase tracking-wider">03</span>
-                                <div class="w-8 h-px bg-white/20"></div>
-                                <span class="font-mono text-xs text-zinc-400 uppercase tracking-wider">PropTech & Maps</span>
-                            </div>
-                            <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-amber-300 transition">Real Estate Mobile App</h3>
-                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
-                                Property discovery and rental marketplace with interactive Google Maps integration, custom filters (budget, rooms, location), virtual tours, and Firebase real-time database syncing.
-                            </p>
-                            
-                            <div class="flex flex-wrap gap-2 pt-2">
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-cyan-300">Flutter</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-amber-400">Google Maps API</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-orange-400">Firebase</span>
-                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-zinc-300">Clean Architecture</span>
-                            </div>
-
-                            <div class="pt-4 flex items-center gap-4">
-                                <span class="text-xs font-mono text-zinc-500">Ready for image upload: <code class="text-zinc-300">/public/images/projects/realestate.png</code></span>
-                            </div>
-                        </div>
-
-                        <!-- Project visual display -->
-                        <div class="lg:col-span-6 flex justify-center">
-                            <div class="relative w-full max-w-md aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-amber-950/40 via-stone-900/30 to-zinc-950 p-6 border border-white/10 flex flex-col justify-between shadow-2xl">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs font-mono text-amber-400">Interactive Map View</span>
-                                    <span class="text-[10px] font-mono text-zinc-400">New Cairo, Egypt</span>
-                                </div>
-
-                                <div class="p-4 rounded-xl bg-zinc-900/80 border border-white/10 my-auto flex items-center gap-4">
-                                    <div class="w-16 h-16 rounded-lg bg-amber-500/20 flex items-center justify-center text-amber-400">
-                                        <i data-lucide="home" class="w-8 h-8"></i>
-                                    </div>
-                                    <div class="space-y-1">
-                                        <div class="text-sm font-semibold text-white">Luxury Penthouse</div>
-                                        <div class="text-xs text-amber-400 font-mono">$450,000 · 3 Beds · 2 Baths</div>
-                                        <div class="text-[10px] text-zinc-400 flex items-center gap-1">
-                                            <i data-lucide="map-pin" class="w-3 h-3 text-cyan-400"></i>
-                                            <span>Fifth Settlement, Cairo</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center justify-between text-[10px] font-mono text-zinc-500">
-                                    <span>Geo-Location Filter</span>
-                                    <span>Live Marker Clustering</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-
-                <!-- PROJECT 4: Ideal POS & ERP Solution (Odoo, SoftPOS & HR) -->
+                <!-- PROJECT 1: Ideal POS & ERP Solution (Odoo, SoftPOS & HR) -->
                 <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-emerald-500/20 hover:border-emerald-500/40 overflow-hidden relative group transition-all duration-300 shadow-[0_10px_35px_rgba(0,0,0,0.4)]" data-cursor-view>
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         <div class="lg:col-span-6 space-y-4">
                             <div class="flex items-center gap-3">
-                                <span class="font-mono text-xs text-emerald-400 uppercase tracking-wider font-bold">04</span>
+                                <span class="font-mono text-xs text-emerald-400 uppercase tracking-wider font-bold">01</span>
                                 <div class="w-8 h-px bg-emerald-500/30"></div>
-                                <span class="font-mono text-xs text-emerald-300 uppercase tracking-wider bg-emerald-950/60 px-2.5 py-0.5 rounded-full border border-emerald-500/30">Enterprise Case Study</span>
+                                <span class="font-mono text-xs text-emerald-300 uppercase tracking-wider bg-emerald-950/60 px-2.5 py-0.5 rounded-full border border-emerald-500/30">Featured Enterprise Case Study</span>
                             </div>
                             <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-emerald-300 transition flex items-center gap-2">
                                 <a href="{{ route('projects.ideal-pos') }}" class="hover:underline flex items-center gap-2">
@@ -742,6 +544,204 @@
                                     <span class="text-emerald-400">NearPay SoftPOS • ZATCA QR</span>
                                 </div>
                             </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- PROJECT 2: Hospital Mobile App -->
+                <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-white/10 overflow-hidden relative group" data-cursor-view>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-6 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <span class="font-mono text-xs text-cyan-400 uppercase tracking-wider">02</span>
+                                <div class="w-8 h-px bg-white/20"></div>
+                                <span class="font-mono text-xs text-zinc-400 uppercase tracking-wider">Mobile Healthcare</span>
+                            </div>
+                            <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-cyan-300 transition">Hospital Mobile App</h3>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+                                A comprehensive healthcare mobile platform featuring patient profile management, live doctor appointment scheduling, prescription tracking, and instant real-time push notifications via Firebase Cloud Messaging.
+                            </p>
+                            
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-cyan-300">Flutter</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-zinc-300">Dart</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-amber-400">Firebase Firestore</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-blue-400">FCM Push</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-purple-400">BLoC</span>
+                            </div>
+
+                            <div class="pt-4 flex items-center gap-4">
+                                <span class="text-xs font-mono text-zinc-500">Ready for image upload: <code class="text-zinc-300">/public/images/projects/hospital.png</code></span>
+                            </div>
+                        </div>
+
+                        <!-- Project visual display (Mockup container) -->
+                        <div class="lg:col-span-6 flex justify-center">
+                            <div class="relative w-full max-w-md aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-cyan-900/40 via-blue-900/30 to-zinc-950 p-6 border border-white/10 flex flex-col justify-between shadow-2xl">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                                        <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                                        <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                                    </div>
+                                    <span class="text-[11px] font-mono text-cyan-400/80">HealthTech v2.4</span>
+                                </div>
+
+                                <!-- UI Mockup Preview -->
+                                <div class="flex items-center justify-center gap-4 py-4">
+                                    <!-- Phone Screen 1 -->
+                                    <div class="w-32 h-48 rounded-xl bg-zinc-900/90 border border-cyan-500/30 p-2.5 flex flex-col justify-between shadow-lg transform -rotate-3 hover:rotate-0 transition duration-300">
+                                        <div class="w-full flex items-center justify-between text-[8px] font-mono text-cyan-300">
+                                            <span>9:41</span>
+                                            <i data-lucide="wifi" class="w-2.5 h-2.5"></i>
+                                        </div>
+                                        <div class="space-y-1.5 my-auto text-left">
+                                            <div class="w-16 h-2 rounded bg-cyan-400/50"></div>
+                                            <div class="w-20 h-1.5 rounded bg-zinc-700"></div>
+                                            <div class="p-1 rounded bg-cyan-950/80 border border-cyan-500/30 text-[7px] text-cyan-200">
+                                                Dr. Sarah (Cardio)
+                                            </div>
+                                        </div>
+                                        <div class="w-full h-4 rounded bg-cyan-500 text-[8px] text-black font-bold flex items-center justify-center">Book Now</div>
+                                    </div>
+
+                                    <!-- Phone Screen 2 -->
+                                    <div class="w-32 h-48 rounded-xl bg-zinc-900/90 border border-blue-500/30 p-2.5 flex flex-col justify-between shadow-lg transform rotate-3 hover:rotate-0 transition duration-300">
+                                        <div class="w-full flex items-center justify-between text-[8px] font-mono text-blue-300">
+                                            <span>Upcoming</span>
+                                            <i data-lucide="bell" class="w-2.5 h-2.5"></i>
+                                        </div>
+                                        <div class="space-y-1 my-auto text-left">
+                                            <div class="text-[8px] text-zinc-300 font-semibold">Appointment #409</div>
+                                            <div class="w-24 h-1 rounded bg-zinc-700"></div>
+                                            <div class="p-1 rounded bg-blue-950/80 border border-blue-500/30 text-[7px] text-blue-200">
+                                                Confirmed · 11:30 AM
+                                            </div>
+                                        </div>
+                                        <div class="w-full h-4 rounded bg-zinc-800 text-[8px] text-zinc-300 flex items-center justify-center">View QR</div>
+                                    </div>
+                                </div>
+
+                                <div class="text-right text-[10px] font-mono text-zinc-500">Live Architecture · Real-time Sync</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- PROJECT 3: Online Banking Mobile App -->
+                <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-white/10 overflow-hidden relative group" data-cursor-view>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-6 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <span class="font-mono text-xs text-purple-400 uppercase tracking-wider">03</span>
+                                <div class="w-8 h-px bg-white/20"></div>
+                                <span class="font-mono text-xs text-zinc-400 uppercase tracking-wider">Fintech & AI</span>
+                            </div>
+                            <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-purple-300 transition">Online Banking App</h3>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+                                High-security banking application built with Flutter & Firebase. Integrated with an intelligent Dialogflow AI chatbot for instant customer support, transaction history, cards control, and biometric authentication.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-cyan-300">Flutter</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-purple-400">Dialogflow AI</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-amber-400">Firebase Auth</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-emerald-400">Biometrics</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-zinc-300">Cubit</span>
+                            </div>
+
+                            <div class="pt-4 flex items-center gap-4">
+                                <span class="text-xs font-mono text-zinc-500">Ready for image upload: <code class="text-zinc-300">/public/images/projects/banking.png</code></span>
+                            </div>
+                        </div>
+
+                        <!-- Project visual display -->
+                        <div class="lg:col-span-6 flex justify-center">
+                            <div class="relative w-full max-w-md aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-purple-950/40 via-indigo-950/30 to-zinc-950 p-6 border border-white/10 flex flex-col justify-between shadow-2xl">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-mono text-purple-400 font-bold">Secure Banking</span>
+                                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[9px] font-mono">Encrypted</span>
+                                </div>
+
+                                <!-- Banking card visual -->
+                                <div class="my-auto mx-auto w-64 h-36 rounded-xl bg-gradient-to-r from-violet-600 via-indigo-600 to-purple-800 p-4 text-white flex flex-col justify-between shadow-2xl border border-white/20 transform group-hover:scale-105 transition duration-300">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-mono tracking-widest uppercase">MOHAMED ELSHABRAWY</span>
+                                        <i data-lucide="credit-card" class="w-4 h-4"></i>
+                                    </div>
+                                    <div class="font-mono text-sm tracking-wider">•••• •••• •••• 4289</div>
+                                    <div class="flex items-center justify-between text-[10px] font-mono text-white/80">
+                                        <span>EXP 08/29</span>
+                                        <span class="font-bold text-xs">VISA</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-between text-[10px] font-mono text-zinc-500">
+                                    <span>Dialogflow AI Bot Active</span>
+                                    <span>Clean Cubit State</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- PROJECT 4: Real Estate Mobile App -->
+                <article class="card-3d rounded-3xl glass-pill p-6 sm:p-10 border border-white/10 overflow-hidden relative group" data-cursor-view>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-6 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <span class="font-mono text-xs text-amber-400 uppercase tracking-wider">04</span>
+                                <div class="w-8 h-px bg-white/20"></div>
+                                <span class="font-mono text-xs text-zinc-400 uppercase tracking-wider">PropTech & Maps</span>
+                            </div>
+                            <h3 class="text-3xl sm:text-4xl font-bold text-white group-hover:text-amber-300 transition">Real Estate Mobile App</h3>
+                            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+                                Property discovery and rental marketplace with interactive Google Maps integration, custom filters (budget, rooms, location), virtual tours, and Firebase real-time database syncing.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-cyan-300">Flutter</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-amber-400">Google Maps API</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-orange-400">Firebase</span>
+                                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-mono text-zinc-300">Clean Architecture</span>
+                            </div>
+
+                            <div class="pt-4 flex items-center gap-4">
+                                <span class="text-xs font-mono text-zinc-500">Ready for image upload: <code class="text-zinc-300">/public/images/projects/realestate.png</code></span>
+                            </div>
+                        </div>
+
+                        <!-- Project visual display -->
+                        <div class="lg:col-span-6 flex justify-center">
+                            <div class="relative w-full max-w-md aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-amber-950/40 via-stone-900/30 to-zinc-950 p-6 border border-white/10 flex flex-col justify-between shadow-2xl">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-mono text-amber-400">Interactive Map View</span>
+                                    <span class="text-[10px] font-mono text-zinc-400">New Cairo, Egypt</span>
+                                </div>
+
+                                <div class="p-4 rounded-xl bg-zinc-900/80 border border-white/10 my-auto flex items-center gap-4">
+                                    <div class="w-16 h-16 rounded-lg bg-amber-500/20 flex items-center justify-center text-amber-400">
+                                        <i data-lucide="home" class="w-8 h-8"></i>
+                                    </div>
+                                    <div class="space-y-1">
+                                        <div class="text-sm font-semibold text-white">Luxury Penthouse</div>
+                                        <div class="text-xs text-amber-400 font-mono">$450,000 · 3 Beds · 2 Baths</div>
+                                        <div class="text-[10px] text-zinc-400 flex items-center gap-1">
+                                            <i data-lucide="map-pin" class="w-3 h-3 text-cyan-400"></i>
+                                            <span>Fifth Settlement, Cairo</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-between text-[10px] font-mono text-zinc-500">
+                                    <span>Geo-Location Filter</span>
+                                    <span>Live Marker Clustering</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
